@@ -2079,7 +2079,7 @@
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			/*border-radius: 100%;*/
 		}
 
 			.image.avatar:before {
@@ -2087,8 +2087,9 @@
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				/*border-radius: 100%;*/
+				/*width: 100%;*/
+				max-width: 300px;
 			}
 
 /* List */
@@ -2481,7 +2482,7 @@
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								fixed;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+		background-image: url("images/overlay.png"), url("../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								auto 100%;
@@ -2528,7 +2529,8 @@
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			/*width: 6.25em;*/
+			height: 50px;
 		}
 
 /* Footer */
@@ -2950,7 +2952,7 @@
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../images/bg.jpg");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
