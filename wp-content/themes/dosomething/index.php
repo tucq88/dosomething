@@ -7,6 +7,7 @@ $assetUri = get_template_directory_uri() . '/assets';
         <title><?php wp_title() ?></title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="google-site-verification" content="cr1ONxBvI9I4bFBSKmccU53-CcjDMlGJ5P-jS46yzis" />
 
         <link rel="stylesheet" href="<?= $assetUri ?>/css/main.css"/>
 
