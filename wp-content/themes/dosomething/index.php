@@ -101,7 +101,21 @@ $assetUri = get_template_directory_uri() . '/assets';
                 <ul class="copyright">
 
                     <li>&copy; Dosomething - <?= date('Y') ?></li>
-                    <li><?php do_action('wpml_add_language_selector'); ?></li>
+                    <li>
+                        <?php
+                        $languages = apply_filters('wpml_active_languages', NULL, 'skip_missing=0');
+                        if (!empty($languages)) :
+                            foreach ($languages as $l) :
+                        ?>
+                                <a class="cs-color-hover" title="" href="<?= $l['url'] ?>"
+                                   data-placement-tooltip="tooltip" target="_blank">
+                                    <i class="flag-icon flag-icon-<?= $l['language_code'] ?>"></i>
+                                </a>
+                        <?php
+                            endforeach;
+                        endif;
+                        ?>
+                    </li>
                     <!--<li>Design by: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>-->
                 </ul>
             </div>
